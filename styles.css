@@ -1,0 +1,70 @@
+body{
+    font-family: 'Barlow' ;
+    background-color: rgb(42, 26, 43);
+    margin: 0%;
+    text-decoration: none;
+}
+
+#titleBarContainer{
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0%;
+}
+#openingScreenContainer{
+    width: 100vw;
+    height: 100vh;
+}
+#openingTitleContainer{
+    position: relative;
+    top: 10%;
+    left: 10%;
+    color: white;
+    font-size: 100px;
+    animation: titleComeIn 3s ease-in-out;
+}
+#openingDescriptionContainer{
+    position: relative;
+    left: 11%;
+    color: white;
+    font-size: 25px;
+    
+    animation: descriptionComeIn 2s ease-in-out;
+}
+.titleBarElements{
+    float: left;
+    margin-left: 2%;
+    color: black;
+    font-weight: 100;
+}
+.titleBarElements:first-child{
+    margin-left: 2%;
+}
+
+
+
+@keyframes descriptionComeIn{
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes titleComeIn{
+    0%{
+        opacity: 0;
+        top: 3%;
+    }
+    60%{
+        top: 10%;
+    }
+    75%{
+        top: 10%;
+        opacity: 1;
+    }
+}
