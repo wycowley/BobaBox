@@ -5,7 +5,7 @@ body{
     margin: 0%;
     text-decoration: none;
     background-color: rgb(42, 26, 43);
-
+    color: white;
 }
 h1{
     margin: 0%;
@@ -19,6 +19,7 @@ svg{
     overflow: hidden;
     position: fixed;
     width: 100%;
+    z-index: 5;
 }
 #openingScreenContainer{
     width: 100vw;
@@ -47,7 +48,7 @@ svg{
 
     /* Constant */
     animation: titleComeIn 7s ease-in-out;
-    width: 50%;
+    width: 80%;
     position: relative;
     color: white;
 
@@ -55,6 +56,15 @@ svg{
     top: 7.5%;
     left: 1%;
     font-size: 50px;
+}
+#openingContentBlock{
+    margin-top: 10%;
+    margin-left: 2%;
+    animation: contentFadeIn 7s ease-in-out;
+}
+.openingContentList{
+    margin-bottom: 1%;
+    font-size: 25px;
 }
 #openingDescriptionContainer{
     /* Constant */
@@ -72,9 +82,17 @@ svg{
 }
 .titleBarElements{
     float: left;
-    margin-left: 2%;
+    margin: 0%;
     color: black;
     font-weight: 100;
+    padding: 1.25%;
+    background-color: rgb(255, 255, 255);
+
+    transition: background-color .5s;
+
+}
+.titleBarElements:hover{
+    background-color: rgb(235, 235, 235);
 }
 .titleBarElements:first-child{
     margin-left: 2%;
@@ -145,5 +163,15 @@ svg{
     75%{
         opacity: 1;
     }
-
+}
+@keyframes contentFadeIn{
+    0%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 0;
+    }
+    85%{
+        opacity: 1;
+    }
 }
